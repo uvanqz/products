@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from .models import Product, Category
 
 
-class BookAPIViewTestCase(TestCase):
+class ProductAPIViewTestCase(TestCase):
     def setUp(self):
         self.user = User.objects.create_user(username="test_user", password="password")
         self.admin_user = User.objects.create_user(

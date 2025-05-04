@@ -4,7 +4,7 @@ from rest_framework import status
 from django.contrib.auth.models import User
 
 
-class UserLoginAPIViewTest(TestCase):
+class UserLoginLogoutAPIViewTest(TestCase):
     def setUp(self):
         self.login_url = reverse('accounts:user_login')
         self.logout_url = reverse('accounts:user_logout')
